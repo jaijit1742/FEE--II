@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="#">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" name="name" pattern="[A-Za-z]{3,}*" required placeholder="Name">
+        <br>
+        <label for="email">Enter your emsil: </label>
+        <input type="email" id="email" name="email" required placeholder="example@xyz.com">
+        <br>
+        <label for="age">Enter your age: </label>
+        <input type="number" min="18" max="60" id="age" name="age" title="Age must be between 18 and 60">
+        <br>
+        <label for="phone">Enter your mobile number: </label>
+        <input type="tel" pattern="[0-9]{10}" id="phone" name="phone" placeholder="+91 1234567890">
+        <br>
+        <label for="password">Enter your password: </label>
+        <input type="password" id="password" name="password" required min="6" max="12">
+        <br>
+        <label for="cPassword">Confirm your password: </label>
+        <input type="password" id="cPassword" name="cPassword" required>
+        <br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
